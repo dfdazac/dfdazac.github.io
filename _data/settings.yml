@@ -3,7 +3,7 @@ disqus:
   comments: false
   disqus_shortname: 'https-dfdazac-github-io'
 
-google-ID: 'UA-112060364-1'
+google-ID: ''
 
 menu:
 - {name: 'Writing', path: 'menu', url: 'writing.html'}
