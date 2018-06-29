@@ -15,10 +15,7 @@ MathJax.Hub.Config({
 ```python
 import sys, os
 sys.path.append(os.getcwd() + os.sep + os.pardir)
-```
 
-
-```python
 %matplotlib inline
 from sklearn.datasets import load_boston
 import numpy as np
