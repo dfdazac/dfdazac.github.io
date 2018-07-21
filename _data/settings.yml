@@ -1,7 +1,7 @@
 # Change to true for Disqus comments
 disqus:
   comments: false
-  disqus_shortname: 'https-dfdazac-github-io'
+  disqus_shortname: 'dfdazac.disqus.com/admin/'
 
 google-ID: ''
 
@@ -23,6 +23,6 @@ pagination:
 
 sharing_button_prompt: 'Feel free to share!'
 
-related_posts: 'You may also enjoy:'
+related_posts: 'You may also enjoy...'
 
 post_date_prefix: 'Written on'
