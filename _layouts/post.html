@@ -12,6 +12,10 @@ layout: default
   <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
 {% endif %}
 
+{% if page.github_link %}
+    <a href="{{page.github_link}}" target="_blank"><img src="assets/img/github_button.png" alt="Download from GitHub" width="165" height="65"></a>
+{% endif %}
+
 {{ content }}
 
 <span class="post-date">

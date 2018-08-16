@@ -3,9 +3,8 @@ layout: post
 title: "Maximum a posteriori signal detection"
 author: "Daniel Daza"
 tags: [maximum a posteriori, map, probability, signal processing]
+github_link: https://github.com/dfdazac/machine-learning-1/blob/master/00-matched-filter.ipynb
 ---
-
-<a href="https://github.com/dfdazac/machine-learning-1/blob/master/00-matched-filter.ipynb" target="_blank"><img src="assets/img/github_button.png" alt="Download from GitHub" width="165" height="65"></a>
 
 Digital signals are all around us. From the phone in our pockets to the massive infrastructure behind the Internet, they have enabled a wide variety of technologies, yet it is easy to take them for granted. We sometimes think of them as strings of zeros and ones traveling in a clear stream of data, but the truth is that as there are digital signals around us, we also have noise.
 

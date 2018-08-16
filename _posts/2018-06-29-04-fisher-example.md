@@ -3,9 +3,8 @@ layout: post
 title: "Dimensionality reduction and classification with Fisher's linear discriminant"
 author: "Daniel Daza"
 tags: [fisher's discriminant, dimensionality reduction, classification]
+github_link: https://github.com/dfdazac/machine-learning-1/blob/master/04-fisher-example.ipynb
 ---
-
-<a href="https://github.com/dfdazac/machine-learning-1/blob/master/04-fisher-example.ipynb" target="_blank"><img src="assets/img/github_button.png" alt="Download from GitHub" width="165" height="65"></a>
 
 In this notebook we will deal with two interesting applications of Fisher's linear discriminant: dimensionality reduction, and classification. This discriminant is formulated so that an appropriate projection of the data is found, so that the distance between points of different classes is **maximized** and the distance between points of the same class is **minimized**. The fact that it needs label information makes this a supervised learning method, in contrast to other dimensionality reduction techniques that work without labels, such as [PCA](https://dfdazac.github.io/05-pca_ex.html).
 
