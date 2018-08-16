@@ -4,11 +4,7 @@ title: "Neural networks from scratch with NumPy"
 author: "Daniel Daza"
 tags: [neural networks, deep learning, numpy, backpropagation, gradient descent]
 ---
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$']]}
-});
-</script>
+
 <a href="https://github.com/dfdazac/machine-learning-1/blob/master/06-neural-networks-numpy.ipynb" target="_blank"><img src="assets/img/github_button.png" alt="Download from GitHub" width="165" height="65"></a>
 
 Neural networks are very popular function approximators used in a wide variety of fields nowadays and coming in all kinds of flavors, so there are countless frameworks that allow us to train and use them without knowing what is going on behind the scenes. So I set out to *reinvent the wheel* and decided to write a post deriving the math for backpropagation from the maximum likelihood principle, as well as implementing it with Python and NumPy. While doing this, I wanted to

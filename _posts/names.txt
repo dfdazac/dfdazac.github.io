@@ -1,6 +1,0 @@
-2018-06-11-lr_ex.md
-2018-06-12-lr_housing.md
-2018-06-14-pca_ex.md
-2018-06-29-fisher-example.md
-2018-07-10-matched-filter.md
-names.txt
