@@ -4,6 +4,10 @@ layout: default
 
 {% include inline-mathjax.html %}
 
+{% if page.plotly %}
+    {% include plotly.html %}
+{% endif %}
+
 <h1>
   {{ page.title }}
 </h1>
