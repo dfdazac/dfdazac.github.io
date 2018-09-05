@@ -12,6 +12,7 @@
 github: [metadata]
 # jekyll-paginate configuration
 paginate:            5
+paginate_path: "/writing/:num/"
 
 # Build settings
 markdown:            kramdown
