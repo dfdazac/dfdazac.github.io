@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing sequential Bayesian learning"
 author: "Daniel Daza"
 tags: [bayesian learning, interactive, plotly]
-github_link: "https://github.com/dfdazac/machine-learning-2/blob/master/00-bayesian-learning.ipynb"
+github_link: https://github.com/dfdazac/machine-learning-2/blob/master/00-bayesian-learning.ipynb
 plotly: true
 ---
 

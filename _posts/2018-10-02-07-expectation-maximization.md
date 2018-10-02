@@ -2,8 +2,8 @@
 layout: post
 title: "Expectation Maximization for latent variable models"
 author: "Daniel Daza"
-tags: []
-github_link:
+tags: [expectation maximization, inference, latent variables, machine learning]
+github_link: https://github.com/dfdazac/machine-learning-1/blob/master/07-expectation-maximization.ipynb
 ---
 
 In all the notebooks we've seen so far, we have made the assumption that the observations correspond directly to realizations of a random variable. Take the case of linear regression: we are given observations of the random variable $t$ (plus some noise), which is the target value for a given value of the input $\mathbf{x}$. Under some criterion, we find the best parameters $\boldsymbol{\theta}$ of a model $y(\mathbf{x}, \boldsymbol{\theta})$ that is able to explain the observations and yield predictions for new inputs.
