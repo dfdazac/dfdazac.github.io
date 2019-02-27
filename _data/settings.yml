@@ -3,7 +3,7 @@ disqus:
   comments: true
   disqus_shortname: 'dfdazac'
 
-google-ID: ''
+google-ID: 'UA-135279548-1'
 
 menu:
 - {name: 'Contact', path: 'menu', url: 'contact.html'}
