@@ -63,7 +63,7 @@ We will solve this optimization problem using gradient descent, by iteratively a
 
 ### Deriving the gradients
 
-To specify the label for an input vector we will use a vector with a one hot encoding, so that the vector has $K$ elements, all zero, except for the position of the correct label, which is one. Let's say we observe a target vector $\mathbf{t}$ for class $m$ (so that the element at position $k$ is one and the rest are zero) for an input vector $\mathbf{x}$, then the negative log-likelihood with this single observation is
+To specify the label for an input vector we will use a vector with a one hot encoding, so that the vector has $K$ elements, all zero, except for the position of the correct label, which is one. Let's say we observe a target vector $\mathbf{t}$ for class $k$ (so that the element at position $k$ is one and the rest are zero) for an input vector $\mathbf{x}$, then the negative log-likelihood with this single observation is
 
 $$
 \begin{align}
