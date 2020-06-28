@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "The Multi-armed Bandit Problem"
 author: "Daniel Daza"
 tags: [Reinforcement learning, action value methods, epsilon greedy, upper confidence bound]
@@ -44,7 +43,7 @@ plt.xticks(np.arange(1, k + 1));
 ```
 
 
-![png](assets/img/multiarmed_test_files/multiarmed_test_1_0.png)
+![png](/assets/img/multiarmed_test_files/multiarmed_test_1_0.png)
 
 
 We would expect each distribution to be exactly that of a normal distribution. Here, however, we are using `violinplot` to plot the distribution, which is estimated using the sample points. On the limit of an infinite number of samples, the visualized distribution should tend to the normal distribution.
@@ -109,7 +108,7 @@ ax2.legend();
 
 
 
-![png](assets/img/multiarmed_test_files/multiarmed_test_3_1.png)
+![png](/assets/img/multiarmed_test_files/multiarmed_test_3_1.png)
 
 
 The results show how the balance between exploration and exploitation is crucial when aiming to maximize the long term reward. A completely greedy policy is only able to achieve an average reward of 1, as once it finds a best estimated value it keeps taking this action regardless of how better other alternatives might be. The exploration introduced by the ε-greedy approaches increases the average reward as well as the average fraction of times the optimal action is taken, which for the greedy method is below 30% of the time, in stark contrast with the 80% obtained by the ε-greedy approach with $\epsilon$ = 0.1.
@@ -166,7 +165,7 @@ ax2.legend();
 
 
 
-![png](assets/img/multiarmed_test_files/multiarmed_test_5_1.png)
+![png](/assets/img/multiarmed_test_files/multiarmed_test_5_1.png)
 
 
 We see that even though the difference is marginal, UCB definitely improves the obtained reward.

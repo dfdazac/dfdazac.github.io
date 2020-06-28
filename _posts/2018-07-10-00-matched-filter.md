@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Maximum a posteriori signal detection"
 author: "Daniel Daza"
 tags: [maximum a posteriori, map, probability, signal processing]
@@ -29,7 +28,7 @@ plt.legend();
 ```
 
 
-![png](assets/img/00-matched-filter_files/00-matched-filter_1_0.png)
+![png](/assets/img/00-matched-filter_files/00-matched-filter_1_0.png)
 
 
 (You can see they seem to be complementary, for reasons I will explain in a moment). If the sender wants to represent a 0, it will send $\mathbf{S}_0$, otherwise it will send $\mathbf{S}_1$ to represent a 1. The outbound message goes through digital to analog converters, amplifiers, antennas, the air, drops of rain, buildings, cables and more, picking up noise, until it gets to the receiver. The noise is usually modeled as [Additive White Gaussian Noise](https://en.wikipedia.org/wiki/Additive_white_Gaussian_noise). Let's simulate it to get an idea of how bad it can be, using the $\mathbf{S}_0$ sequence:
@@ -45,7 +44,7 @@ plt.xlabel('Time steps');
 ```
 
 
-![png](assets/img/00-matched-filter_files/00-matched-filter_3_0.png)
+![png](/assets/img/00-matched-filter_files/00-matched-filter_3_0.png)
 
 
 From my days as bachelor student in electronics, I can wistfully say: yes, this is how they would look on the oscilloscope. Luckily, we can still detect the original signal. We will examine a simple but powerful filter to detect digital signals: the **matched filter**. There are [different ways](https://en.wikipedia.org/wiki/Matched_filter#Derivation_of_the_matched_filter) to derive it and justify its optimality, here we will approach it from the point of view of probability theory.
@@ -109,11 +108,11 @@ detect_signal(transmission1)
 ```
 
 
-![png](assets/img/00-matched-filter_files/00-matched-filter_7_0.png)
+![png](/assets/img/00-matched-filter_files/00-matched-filter_7_0.png)
 
 
 
-![png](assets/img/00-matched-filter_files/00-matched-filter_7_1.png)
+![png](/assets/img/00-matched-filter_files/00-matched-filter_7_1.png)
 
 
 It works! This is just a small example, however, and there are other mechanisms needed for this method to work well in the contexts of digital communications, such as modulation and synchronization. On the other hand, as a direct application of Bayes' theorem, it serves its purpose really well.

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Dimensionality reduction and classification with Fisher's linear discriminant"
 author: "Daniel Daza"
 tags: [fisher's discriminant, dimensionality reduction, classification]
@@ -34,7 +33,7 @@ plt.scatter(data2[:,0], data2[:,1]);
 ```
 
 
-![png](assets/img/04-fisher-example_files/04-fisher-example_1_0.png)
+![png](/assets/img/04-fisher-example_files/04-fisher-example_1_0.png)
 
 
 ## Projecting the data
@@ -66,7 +65,7 @@ plt.title('Data in the projected space');
 ```
 
 
-![png](assets/img/04-fisher-example_files/04-fisher-example_5_0.png)
+![png](/assets/img/04-fisher-example_files/04-fisher-example_5_0.png)
 
 
 Great! It looks as if we reduced the dimensionality of the data, and now we are able to discriminate between two classes by defining a single appropriate threshold. For this example, this threshold seems to lie between 0 and 1. Now we might ask, how do we choose the correct threshold?
@@ -120,7 +119,7 @@ plt.xlabel('Threshold');
 ```
 
 
-![png](assets/img/04-fisher-example_files/04-fisher-example_7_0.png)
+![png](/assets/img/04-fisher-example_files/04-fisher-example_7_0.png)
 
 
 We have obtained the best threshold that separates the data in the one-dimensional space using cross-validation. What is the final accuracy on the test set?
@@ -171,7 +170,7 @@ ax2.set_ylabel('Probability density');
 ```
 
 
-![png](assets/img/04-fisher-example_files/04-fisher-example_11_0.png)
+![png](/assets/img/04-fisher-example_files/04-fisher-example_11_0.png)
 
 
 We can now find the best threshold using the training data by using a handy result from decision theory (see [1] for more details): the minimum misclassification rate is obtained at the intersection of the class-conditional densities, which we just found. This intersection can be found analitically and is also computed when calling the `fit()` method. Let's see what this value is.
@@ -217,7 +216,7 @@ plt.scatter(X[Y == 1, 0], X[Y == 1, 1]);
 ```
 
 
-![png](assets/img/04-fisher-example_files/04-fisher-example_18_0.png)
+![png](/assets/img/04-fisher-example_files/04-fisher-example_18_0.png)
 
 
 Clearly there is not a line that can separate the two classes. Let's try, however, just to satisfy our curiosity.
@@ -279,7 +278,7 @@ plt.scatter(X[Y == 1, 0], X[Y == 1, 1]);
 ```
 
 
-![png](assets/img/04-fisher-example_files/04-fisher-example_24_0.png)
+![png](/assets/img/04-fisher-example_files/04-fisher-example_24_0.png)
 
 
 Whoa.

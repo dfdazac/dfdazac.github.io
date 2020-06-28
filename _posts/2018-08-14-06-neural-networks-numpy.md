@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Neural networks from scratch with NumPy"
 author: "Daniel Daza"
 tags: [neural networks, deep learning, numpy, backpropagation, gradient descent]
@@ -436,7 +435,7 @@ plt.legend();
 ```
 
 
-![png](assets/img/06-neural-networks-numpy_files/06-neural-networks-numpy_4_0.png)
+![png](/assets/img/06-neural-networks-numpy_files/06-neural-networks-numpy_4_0.png)
 
 
 We will define an API for the model that accepts arrays of integer labels for each sample. However, to keep compatibility with our equations, we will internaly make use of one hot vectors for some operations. The following function does this transformation.
@@ -582,7 +581,7 @@ plt.legend();
 ```
 
 
-![png](assets/img/06-neural-networks-numpy_files/06-neural-networks-numpy_13_0.png)
+![png](/assets/img/06-neural-networks-numpy_files/06-neural-networks-numpy_13_0.png)
 
 
 As we can see, the network can model the sigmoid function. For bigger networks, we can check that the output probabilities sum to one.
@@ -665,7 +664,7 @@ plt.scatter(X[Y==1, 0], X[Y==1, 1]);
 ```
 
 
-![png](assets/img/06-neural-networks-numpy_files/06-neural-networks-numpy_19_0.png)
+![png](/assets/img/06-neural-networks-numpy_files/06-neural-networks-numpy_19_0.png)
 
 
 A linear model with no hidden units would not perform well since the classes are not linearly separable. We will train a model with one hidden layer, with 10 units in it.
@@ -692,7 +691,7 @@ plt.xlabel('Epochs');
 ```
 
 
-![png](assets/img/06-neural-networks-numpy_files/06-neural-networks-numpy_21_0.png)
+![png](/assets/img/06-neural-networks-numpy_files/06-neural-networks-numpy_21_0.png)
 
 
 The optimizer seems to be doing its job! The loss decreases monotonically and gets to a low value, confirming that we can overfit to the training data. As in a [previous post](https://dfdazac.github.io/04-fisher-example.html), we can visualize the decision boundary created by the model after training:
@@ -715,7 +714,7 @@ plt.scatter(X[Y == 1, 0], X[Y == 1, 1]);
 ```
 
 
-![png](assets/img/06-neural-networks-numpy_files/06-neural-networks-numpy_23_0.png)
+![png](/assets/img/06-neural-networks-numpy_files/06-neural-networks-numpy_23_0.png)
 
 
 It's interesting to see how this decision boundary is much more irregular compared to that obtained by Fisher's discriminant in a previous post. The neural network is a more complex model, so it can come up with more elaborate functions of the input, as we observe here.

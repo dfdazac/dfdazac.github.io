@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Expectation Maximization for latent variable models"
 author: "Daniel Daza"
 tags: [expectation maximization, inference, latent variables, machine learning]
@@ -10,7 +9,7 @@ In all the notebooks we've seen so far, we have made the assumption that the obs
 
 In the more general case, we have a dataset of observations $\mathcal{D} = \lbrace \mathbf{x_1}, ..., \mathbf{x_N}\rbrace$. We hypothesize that each observation is drawn from a probability distribution $p(\mathbf{x_i}\vert\boldsymbol{\theta})$  with parameters $\boldsymbol{\theta}$. It is sometimes useful to think of this as a probabilistic graphical model, where nodes represent random variables and edges encode dependency relationships between them. In this case, the graph looks as follows:
 
-![](assets/img/07-expectation-maximization_files/graph-simple.png)
+![](/assets/img/07-expectation-maximization_files/graph-simple.png)
 
 In this graph we show that we have $N$ observations by enclosing the random variables within a *plate*. This also represents the fact that we assume the observations to be independent.
 
@@ -45,7 +44,7 @@ ax2.set_ylabel('Probability density');
 ```
 
 
-![png](assets/img/07-expectation-maximization_files/07-expectation-maximization_1_0.png)
+![png](/assets/img/07-expectation-maximization_files/07-expectation-maximization_1_0.png)
 
 
 Clearly, once we have actually examined the data, we realize that a single normal distribution is not a good model. The data seems to come from a multimodal distribution with two components, which a single Gaussian is not able to capture. In this case we are better off by changing our model to a *mixture model*, a model that mixes two or more distributions. For the example above, it would seem that a mixture of two components, centered at -2 and 2 would be a better fit.
@@ -54,7 +53,7 @@ Under this idea, our hypothesis is the next: there are $K$ components in the mix
 
 We can think of the component as a discrete random variable $\mathbf{z}$ that can take values from 1 up to $K$. Therefore, to each sample $x$ there is an associated value of $\mathbf{z}$. Since we do not observe $\mathbf{z}$, we call it a **latent variable**. If we collapse the parameters $\pi_k$, $\mu_k$ and $\sigma_k$ into a single parameter $\boldsymbol{\theta}$, the graphical model for the general case is now the following:
 
-![](assets/img/07-expectation-maximization_files/graph-latent.png)
+![](/assets/img/07-expectation-maximization_files/graph-latent.png)
 
 Note how the model emphasizes the fact that each observation has an associated value of the latent variable. Also note that since $z$ is not observed, its node is not shaded.
 
@@ -145,7 +144,7 @@ for i in range(10):
 ```
 
 
-![png](assets/img/07-expectation-maximization_files/07-expectation-maximization_3_0.png)
+![png](/assets/img/07-expectation-maximization_files/07-expectation-maximization_3_0.png)
 
 
 Our hypothesis is that each pixel $x_i$ in the image $\mathbf{x}$ is a Bernoulli random variable with probability $\mu_i$ of being 1, and so we define the vector $\boldsymbol{\mu}$ as containing the probabilities for each pixel.
@@ -177,7 +176,7 @@ for i, component_mean in enumerate(model.mu):
 ```
 
 
-![png](assets/img/07-expectation-maximization_files/07-expectation-maximization_7_0.png)
+![png](/assets/img/07-expectation-maximization_files/07-expectation-maximization_7_0.png)
 
 
 We can see that the means correspond to the three digits in the dataset. In this particular case, given a value of 1 for the latent variable $\mathbf{z}$ (corresponding to digit 4), the observation (the image) is a sample from the distribution whose mean is given by the one to the left in the plots above. The mixing coefficients give us an idea of the proportion of instances of each digit in the dataset used to train the model.
