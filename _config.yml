@@ -94,26 +94,23 @@ analytics:
 # Site Author
 author:
   name             :
-  avatar           : "/assets/img/d.jpg"
+  avatar           : "/assets/img/d.png"
   bio              : "I am a PhD student at Vrije Universiteit Amsterdam and the University of Amsterdam.<br>I am interested in teaching machines to discover entities and relations in data."
   location         :
   email            : "d.dazacruz@vu.nl"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:d.dazacruz@vu.nl"
     - label: "Google Scholar"
       icon: "fa-solid fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=VR4a4QIAAAAJ&hl=en"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/danieldazac"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/dfdazac"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/daniel-daza/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dfdazac"
 
 # Site Footer
 footer:
