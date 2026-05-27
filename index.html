@@ -5,75 +5,213 @@ author_profile: true
 
 <style>
   .page__inner-wrap {
-    padding: 20px !important; /* Adjust the value as needed */
+    padding: 20px !important;
+  }
+
+  .research-home {
+    color: #22313f;
+  }
+
+  .research-home a {
+    font-weight: 600;
+  }
+
+  .research-hero {
+    padding: 1.75rem 0 1.4rem;
+    border-bottom: 1px solid #dfe7ea;
+  }
+
+  .research-eyebrow {
+    margin: -0.25rem 0 0.75rem;
+    color: #4f6771;
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.45;
+    letter-spacing: 0;
+  }
+
+  .research-hero h1 {
+    margin: 0 0 0.55rem;
+    color: #17232e;
+    font-size: 2.15rem;
+    line-height: 1.12;
+  }
+
+  .research-hero__summary {
+    max-width: 46rem;
+    margin: 0 0 1rem;
+    color: #344754;
+    font-size: 1.04rem;
+    line-height: 1.65;
+  }
+
+  .research-section {
+    padding: 1.65rem 0 0;
+  }
+
+  .research-section h2 {
+    margin: 0 0 0.8rem;
+    color: #17232e;
+    font-size: 1.28rem;
+  }
+
+  .publication-card {
+    border: 1px solid #dce6e9;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(34, 49, 63, 0.05);
+  }
+
+  .highlight-list {
+    display: grid;
+    gap: 0.7rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .highlight-list li {
+    padding: 0.75rem 0.85rem;
+    border-left: 4px solid #408b91;
+    background: #f7faf9;
+    color: #344754;
+    line-height: 1.55;
+  }
+
+  .publication-list {
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  .publication-note {
+    margin-top: -0.25rem;
+    color: #6a7780;
+    font-size: 0.84rem;
+  }
+
+  .publication-card {
+    padding: 0.95rem 1rem;
+  }
+
+  .publication-card h3 {
+    margin: 0 0 0.28rem;
+    color: #17232e;
+    font-size: 1rem;
+    line-height: 1.35;
+  }
+
+  .publication-card p {
+    margin: 0.2rem 0;
+    color: #435766;
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  .publication-meta {
+    color: #6a5a38 !important;
+    font-weight: 700;
+  }
+
+  .publication-links {
+    margin-top: 0.4rem !important;
+    font-size: 0.84rem !important;
+  }
+
+  .last-updated {
+    margin-top: 1.6rem;
+    color: #6a7780;
+    font-size: 0.78rem;
+  }
+
+  @media (max-width: 900px) {
+    .research-hero h1 {
+      font-size: 1.72rem;
+    }
   }
 </style>
 
-I am a postdoctoral researcher at the <a href="https://lr.cs.vu.nl/" target="_blank">Learning and Reasoning Group</a> at the Vrije Universiteit Amsterdam. 
+<div class="research-home">
+  <section class="research-hero" aria-labelledby="profile-title">
+    <h1 id="profile-title">Daniel Daza</h1>
+    <p class="research-eyebrow">
+      Postdoctoral Researcher<br>
+      Learning &amp; Reasoning Group<br>
+      Vrije Universiteit Amsterdam
+    </p>
+    <p class="research-hero__summary">
+      I study artificial intelligence methods for representing and learning from structured scientific data, especially knowledge graphs. My work spans graph representation learning, complex query answering, foundation models for knowledge graphs, and applications in scientific discovery and healthcare.
+    </p>
+    <p class="research-hero__summary">
+      I completed my PhD at Vrije Universiteit Amsterdam <i>cum laude</i> in 2024. Before joining VU Amsterdam as a postdoctoral researcher in January 2026, I worked as a postdoctoral researcher at Amsterdam UMC on machine learning for knowledge graphs and rare disease research.
+    </p>
+  </section>
 
-My research explores how graphs can be used as expressive representations of real-world phenomena, and how learning algorithms can exploit these representations to make predictions, answer queries, and support discovery. I work on both foundational aspects, such as neural architectures and algorithms for representation learning on graphs, and their applications to problems including relational reasoning, hypothesis generation over scientific knowledge graphs, and predictive models for science and engineering.
+  <section class="research-section" aria-labelledby="recent-highlights">
+    <h2 id="recent-highlights">Recent Highlights</h2>
+    <ul class="highlight-list">
+      <li><a href="https://openreview.net/pdf?id=Qb6vIM7MxE">Interactive Query Answering on Knowledge Graphs with Soft Entity Constraints</a> has been accepted in <i>Transactions on Machine Learning Research</i>, extending query answering with constraints that are difficult to express in first-order logic.</li>
+      <li><a href="https://openreview.net/pdf?id=zDEwl4zidP">Explaining Graph Neural Networks for Node Similarity on Graphs</a> has been accepted in <i>Transactions on Machine Learning Research</i>, studying how to explain learned notions of similarity in graph neural networks.</li>
+      <li>Our project <i>Large Laboratory Models</i> received computing time on national compute facilities via the NWO Large Compute Application program, with 300k CPU and 2M GPU compute credits.</li>
+    </ul>
+  </section>
 
-<div class="body">
-<h2>Recent Highlights</h2>
-<ul>
-    <li>In our <a href="https://arxiv.org/abs/2508.13663" target="_blank">new preprint</a>, we present new methods for answering logical queries over knowledge graphs, that allow to incorporate "similarity constraints" that are hard to represent with first-order logic.
-    <li><a href="https://openreview.net/forum?id=QI0l842vSq" target="_blank">GRAPES 🍇</a> has been accepted in <i>Transactions on Machine Learning Research</i>! we propose a method for scaling GNNs to graphs with up to 2M nodes and 60M edges.</li> 
-    <li>I have defended my PhD with distinction <i>cum laude</i>. My thesis is avalable at <a href="https://research.vu.nl/en/publications/exploiting-subgraphs-and-attributes-for-representation-learning-o" target="_blank">this link</a>.</li>
-    <li><a href="https://openreview.net/forum?id=183XrFqaHN" target="_blank">UnRavL</a> has been accepted to the 2024 Learning on Graphs conference!</li>
-</ul>
+  <section class="research-section" aria-labelledby="selected-publications">
+    <h2 id="selected-publications">Selected Publications</h2>
+    <p>
+      For a complete publication list, see <a href="https://scholar.google.com/citations?user=VR4a4QIAAAAJ&amp;hl=en">Google Scholar</a>.
+    </p>
+    <p class="publication-note">*Indicates equal contribution.</p>
+    <div class="publication-list">
+      <article class="publication-card">
+        <h3>Interactive Query Answering on Knowledge Graphs with Soft Entity Constraints</h3>
+        <p>Daniel Daza, Alberto Bernardi, Luca Costabello, Christophe Gueret, Masoud Mansoury, Michael Cochez, Martijn Schut.</p>
+        <p class="publication-meta">Transactions on Machine Learning Research, 2026</p>
+        <p class="publication-links"><a href="https://arxiv.org/abs/2508.13663">paper</a> / <a href="https://github.com/dfdazac/nqr">code</a></p>
+      </article>
+
+      <article class="publication-card">
+        <h3>Explaining Graph Neural Networks for Node Similarity on Graphs</h3>
+        <p>Daniel Daza, Cuong Xuan Chu, Trung-Kien Tran, Daria Stepanova, Michael Cochez, Paul Groth.</p>
+        <p class="publication-meta">Transactions on Machine Learning Research, 2026</p>
+      </article>
+
+      <article class="publication-card">
+        <h3>Counting Still Counts: Understanding Neural Complex Query Answering Through Query Relaxation</h3>
+        <p>Yannick Brunink*, Daniel Daza*, Yunjie He, Michael Cochez.</p>
+        <p class="publication-meta">Transactions on Machine Learning Research, 2026</p>
+      </article>
+
+      <article class="publication-card">
+        <h3>Contextualized Interpretation of Machine-Learning Predictions in Rare Disease Omics</h3>
+        <p>Daniel Daza, Yorrick Jaspers, Alberto Bernardi, Luca Costabello, Christophe Gueret, Michael Cochez, Marc Engelen, Stephan Kemp, Martijn Schut.</p>
+        <p class="publication-meta">International Conference on Artificial Intelligence in Medicine, 2026</p>
+      </article>
+
+      <article class="publication-card">
+        <h3>GRAPES: Learning to Sample Graphs for Scalable Graph Neural Networks</h3>
+        <p>Taraneh Younesian, Daniel Daza, Emile van Krieken, Thiviyan Thanapalasingam, Peter Bloem.</p>
+        <p class="publication-meta">Transactions on Machine Learning Research, 2025</p>
+        <p class="publication-links"><a href="https://openreview.net/forum?id=QI0l842vSq">paper</a> / <a href="https://github.com/dfdazac/grapes">code</a></p>
+      </article>
+
+      <article class="publication-card">
+        <h3>UnRavL: A Neuro-Symbolic Framework for Answering Graph Pattern Queries in Knowledge Graphs</h3>
+        <p>Tamara Cucumides, Daniel Daza, Pablo Barcelo, Michael Cochez, Floris Geerts, Juan L. Reutter, Miguel Romero Orth.</p>
+        <p class="publication-meta">Learning on Graphs Conference, 2024</p>
+        <p class="publication-meta">🥈 Best Paper Honorable Mention</p>
+        <p class="publication-links"><a href="https://openreview.net/forum?id=183XrFqaHN">paper</a></p>
+      </article>
+
+      <article class="publication-card">
+        <h3>Complex Query Answering with Neural Link Predictors</h3>
+        <p>Erik Arakelyan*, Daniel Daza*, Pasquale Minervini*, Michael Cochez.</p>
+        <p class="publication-meta">International Conference on Learning Representations, 2021</p>
+        <p class="publication-meta">🥇 Outstanding Paper Award</p>
+        <p class="publication-links"><a href="https://openreview.net/forum?id=Mos9F9kDwkz">paper</a> / <a href="https://github.com/uclnlp/cqd">code</a></p>
+      </article>
+    </div>
+  </section>
+  
+  <br>
+  <p class="last-updated">Last updated: May 27, 2026.</p>
 </div>
-
-<h2>Selected Publications</h2>
-
-<p>
-    For a full list of publications, see <a href="https://scholar.google.com/citations?user=VR4a4QIAAAAJ&hl=en">Google Scholar</a>.
-</p>
-
-<p>
-    <b>Interactive Query Answering on Knowledge Graphs with Soft Entity Constraints</b><br>
-    Daniel Daza, Alberto Bernardi, Luca Costabello, Christophe Gueret, Masoud Mansoury, Michael Cochez, Martijn Schut. <i>(preprint, 2025)</i>.<br>
-    [<a href="https://arxiv.org/abs/2508.13663">paper</a>] [<a href="https://github.com/dfdazac/nqr">code</a>]
-</p>
-
-<p>
-    <b>GRAPES: Learning to Sample Graphs for Scalable Graph Neural Networks</b><br>
-    Taraneh Younesian, Daniel Daza, Emile van Krieken, Thiviyan Thanapalasingam, Peter Bloem, in <i>Transactions on Machine Learning Research (2025)</i>.<br>
-    [<a href="https://openreview.net/forum?id=QI0l842vSq">paper</a>] [<a href="https://github.com/dfdazac/grapes">code</a>]
-</p>
-
-<p>
-    <b>UnRavL: A Neuro-Symbolic Framework for Answering Graph Pattern Queries in Knowledge Graphs</b><br>
-    Tamara Cucumides, Daniel Daza, Pablo Barcelo, Michael Cochez, Floris Geerts, Juan L Reutter, Miguel Romero Orth, in <i>Learning on Graphs Conference 2024</i>.<br>
-    [<a href="https://openreview.net/forum?id=183XrFqaHN">paper</a>]
-</p>
-
-<p>
-    <b>Adapting Neural Link Predictors for Data-Efficient Complex Query Answering</b><br>
-    Erik Arakelyan, Pasquale Minervini, Daniel Daza, Michael Cochez, and Isabelle Augenstein, in <i>NeurIPS 2024</i>.<br>
-    [<a href="https://arxiv.org/abs/2301.12313">arxiv</a>] [<a href="https://github.com/EdinburghNLP/adaptive-cqd">code</a>]
-</p>
-
-<p>
-    <b>BioBLP: A Modular Framework for Learning on Multimodal Biomedical Knowledge Graphs</b><br>
-    Daniel Daza, Dimitrios Alivanistos, Payal Mitra, Thom Pijnenburg, Michael Cochez, and Paul Groth, in <i>Journal of Biomedical Semantics (2023)</i>.<br>
-    [<a href=https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-023-00301-y>paper</a>] [<a href="https://github.com/elsevier-AI-Lab/BioBLP">code</a>]
-</p>
-
-<p>
-    <b>Inductive Entity Representations from Text via Link Prediction</b><br>
-    Daniel Daza, Michael Cochez, and Paul Groth, in <i>The Web Conference 2021</i>.<br>
-    [<a href="https://arxiv.org/abs/2010.03496">arXiv</a>] [<a href="https://github.com/dfdazac/blp">code</a>] [<a href="https://dblp.uni-trier.de/rec/conf/www/DazaCG21.html?view=bibtex">bibtex</a>]
-</p>
-
-Last update: Jan 6 2026.
-<!-- <p>
-<b>title</b><br>
-authors, in <i>venue</i><br>
-[<a href="arxivlink">arXiv</a>] [<a href="githublink">code</a>] [<a href="bibtexlink">bibtex</a>]
-</p> -->
-
-<!-- <p>
-<b>title</b><br>
-authors, in <i>venue</i><br>
-[<a href="arxivlink">arXiv</a>] [<a href="githublink">code</a>] [<a href="bibtexlink">bibtex</a>]
-</p> -->

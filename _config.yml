@@ -20,7 +20,7 @@ title                    : "Daniel Daza"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Daniel Daza"
-description              : "An amazing website."
+description              : "Daniel Daza, postdoctoral researcher in artificial intelligence, knowledge graphs, graph representation learning, and scientific discovery."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,9 +95,9 @@ analytics:
 author:
   name             :
   avatar           : "/assets/img/d.png"
-  bio              : "I am a PhD student at Vrije Universiteit Amsterdam and the University of Amsterdam.<br>I am interested in teaching machines to discover entities and relations in data."
+  bio              : "Postdoctoral researcher at Vrije Universiteit Amsterdam.<br>I work on AI methods for knowledge graphs, graph representation learning, and scientific discovery."
   location         :
-  email            : "d.dazacruz@vu.nl"
+  email            : "dfdazac@gmail.com"
   links:
     - label: "Google Scholar"
       icon: "fa-solid fa-graduation-cap"
@@ -140,6 +140,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - "*.tex"
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
