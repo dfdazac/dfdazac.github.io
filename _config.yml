@@ -20,8 +20,8 @@ title                    : "Daniel Daza"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Daniel Daza"
-description              : "Daniel Daza, postdoctoral researcher in artificial intelligence, knowledge graphs, graph representation learning, and scientific discovery."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Daniel Daza, postdoctoral researcher at TU/e. Learning and reasoning with structured knowledge, complex query answering, and scientific discovery."
+url                      : "https://dfdazac.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             :
+  name             : "Daniel Daza"
   avatar           : "/assets/img/d.png"
-  bio              : "Postdoctoral researcher at Vrije Universiteit Amsterdam.<br>I work on AI methods for knowledge graphs, graph representation learning, and scientific discovery."
+  bio              : "Postdoctoral researcher at TU/e.<br>Learning and reasoning with structured knowledge.<br>SimuLingua · ELLIS member."
   location         :
   email            : "dfdazac@gmail.com"
   links:

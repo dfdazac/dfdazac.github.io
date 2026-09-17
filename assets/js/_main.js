@@ -133,4 +133,27 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
+
+  // Fill citation tooltips from the referenced bibliography entry.
+  $('.page__content').find('a.citation[href^="#"]').each(function() {
+    var citation = $(this);
+    var id = decodeURIComponent(citation.attr('href').slice(1));
+    var target = document.getElementById(id);
+
+    if (!target || citation.attr('data-reference')) {
+      return;
+    }
+
+    var referenceText = $(target).text().trim();
+
+    if (!referenceText) {
+      referenceText = $(target).parent().text().trim();
+    }
+
+    referenceText = referenceText.replace(/\s+/g, ' ');
+
+    if (referenceText) {
+      citation.attr('data-reference', referenceText);
+    }
+  });
 });

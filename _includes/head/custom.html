@@ -9,3 +9,7 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+
+{% if page.home_identity %}
+<link rel="stylesheet" href="{{ '/assets/css/research-home.css' | relative_url }}">
+{% endif %}

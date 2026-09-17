@@ -25,3 +25,59 @@
 .badge--orange  { background-color: #fff2e6; color: #994d00; border-color: #ffcc99; }
 .badge--purple  { background-color: #f3e6ff; color: #4b0082; border-color: #d1b3ff; }
 .badge--red     { background-color: #ffe6e6; color: #660000; border-color: #ff9999; }
+
+.citation {
+  position: relative;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.citation::after {
+  position: absolute;
+  bottom: calc(100% + 0.55rem);
+  left: 50%;
+  z-index: 20;
+  width: min(24rem, calc(100vw - 2rem));
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+  color: #222;
+  content: attr(data-reference);
+  font-size: 0.78em;
+  font-weight: 400;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  text-align: left;
+  transform: translate(-50%, 0.2rem);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+  visibility: hidden;
+  white-space: normal;
+}
+
+.citation::before {
+  position: absolute;
+  bottom: calc(100% + 0.25rem);
+  left: 50%;
+  z-index: 21;
+  border-color: #fff transparent transparent;
+  border-style: solid;
+  border-width: 0.35rem 0.35rem 0;
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 0.2rem);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+  visibility: hidden;
+}
+
+.citation:hover::after,
+.citation:focus-visible::after,
+.citation:hover::before,
+.citation:focus-visible::before {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  visibility: visible;
+}
