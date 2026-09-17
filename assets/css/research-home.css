@@ -61,7 +61,7 @@
 
 @media (min-width: 64em) {
  .page:has(.research-home) { padding-right: 1rem; }
- .page__inner-wrap:has(.research-home) { max-width: 32rem; }
+ .page__inner-wrap:has(.research-home) { max-width: 38rem; }
 }
 @media (max-width: 600px) {
  #main:has(.research-home) .sidebar { margin-bottom: .5rem; }
