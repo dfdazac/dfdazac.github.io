@@ -3,7 +3,7 @@ layout: single
 author_profile: true
 home_identity: true
 excerpt: "Learning and reasoning with structured knowledge. Daniel Daza, postdoctoral researcher at TU/e, working on complex reasoning and scientific discovery."
-last_modified_at: 2026-09-17
+last_modified_at: 2026-11-04
 ---
 
 <div class="research-home">
@@ -32,20 +32,17 @@ last_modified_at: 2026-09-17
       <article class="research-theme">
         <span class="theme-number" aria-hidden="true">01</span>
         <div><h3>Learning representations of structured knowledge</h3>
-        <p>How can machine learning capture the information in graph-structured data? I study graph representation learning, including methods that combine graph structure with text and molecular data, scale learning to large graphs, and compute and explain similarity between entities.</p>
-        <p class="theme-evidence"><a href="#paper-text">BLP</a> · <a href="#paper-bioblp">BioBLP</a> · <a href="#paper-grapes">GRAPES</a> · <a href="#paper-similarity">Explaining node similarity</a></p></div>
+        <p>How can machine learning capture the information in graph-structured data? I study graph representation learning, including methods that combine graph structure with text [<a href="#paper-text">7</a>] and multimodal data of proteins and molecules [<a href="#paper-bioblp">6</a>], scale learning to large graphs [<a href="#paper-grapes">4</a>], and compute and explain similarities between entities [<a href="#paper-similarity">2</a>].</p></div>
       </article>
       <article class="research-theme">
         <span class="theme-number" aria-hidden="true">02</span>
         <div><h3>Complex reasoning with learned representations</h3>
-        <p>How can we answer expressive queries over graphs when information is missing? I develop neural and neuro-symbolic query answering methods that use learned representations to reason over incomplete graphs and incorporate user preferences through soft constraints.</p>
-        <p class="theme-evidence"><a href="#paper-cqd">CQD</a> · <a href="#paper-unravl">UnRavL</a> · <a href="#paper-counting">Query relaxation</a> · <a href="#paper-nqr">Soft constraints</a></p></div>
+        <p>How can we answer expressive queries over graphs when information is missing? I develop neural and neuro-symbolic query answering methods that use learned representations to reason over incomplete graphs [<a href="#paper-cqd">8</a>, <a href="#paper-unravl">5</a>, <a href="#paper-counting">3</a>] and incorporate user preferences through soft constraints [<a href="#paper-nqr">1</a>].</p></div>
       </article>
       <article class="research-theme">
         <span class="theme-number" aria-hidden="true">03</span>
         <div><h3>Applications to scientific discovery</h3>
-        <p>How can graph learning and reasoning help scientists interpret data and investigate new hypotheses? I apply these methods to multimodal biomedical knowledge graphs in BioBLP, the interpretation of rare disease omics predictions, and materials discovery through knowledge graphs and multimodal foundation models in SimuLingua.</p>
-        <p class="theme-evidence"><a href="#paper-bioblp">BioBLP</a> · <a href="#paper-omics">Rare disease omics</a> · <a href="#current-work">SimuLingua</a></p></div>
+        <p>How can graph learning and reasoning help scientists interpret data and investigate new hypotheses? I apply these methods to multimodal biomedical knowledge graphs [<a href="#paper-bioblp">6</a>], the <a href="https://link.springer.com/chapter/10.1007/978-3-032-30813-9_74">interpretation of rare disease omics predictions</a>, and materials discovery through knowledge graphs and multimodal foundation models in <a href="https://simulingua.eu/">SimuLingua</a>.</p></div>
       </article>
     </div>
   </section>
@@ -78,13 +75,6 @@ last_modified_at: 2026-09-17
         <p class="publication-context">Examining neural query answering through simpler, relaxed queries.</p>
         <p>Yannick Brunink*, <strong>Daniel Daza*</strong>, Yunjie He, Michael Cochez.</p>
         <p class="publication-meta">Transactions on Machine Learning Research, 2026</p>
-      </article>
-
-      <article class="publication-card" id="paper-disambiguation">
-        <h3>Select, Don’t Train: The Benefits of Modular Entity Disambiguation with LLM-Based Selection</h3>
-        <p class="publication-context">Using language models within a modular approach to entity disambiguation.</p>
-        <p>F. Polat, <strong>Daniel Daza</strong>, P. Zhang, K. Zaporojets, P. Groth.</p>
-        <p class="publication-meta">International Semantic Web Conference, 2026</p>
       </article>
 
       <article class="publication-card" id="paper-grapes">
@@ -129,13 +119,5 @@ last_modified_at: 2026-09-17
         <p class="publication-links"><a href="https://openreview.net/forum?id=Mos9F9kDwkz">paper</a> / <a href="https://github.com/uclnlp/cqd">code</a></p>
       </article>
     </div>
-  </section>
-
-  <section class="research-section" aria-labelledby="teaching">
-    <h2 id="teaching">Teaching and Academic Service</h2>
-    <p>I supervise bachelor’s and master’s research on machine learning for constructing graphs and learning representations over them.</p>
-    <p>At VU Amsterdam, I contributed to the design of the first edition of <i>Machine Learning for Graphs</i>, now a recurring MSc course, including a lecture, a homework assignment, and student working sessions. I have also taught lectures on graph representation learning, complex query answering, and learning with graphs.</p>
-    <p>I contributed to the CIKM 2023 tutorial <i>Reasoning beyond Triples</i> and review for venues including ICLR, ICML, NeurIPS, and TMLR. I was recognized as an ICML Gold Reviewer in 2026.</p>
-    <p><a href="{{ '/assets/daniel-daza-cv.pdf' | relative_url }}">Download my CV</a> for supervision, teaching, service, and the full publication record.</p>
   </section>
 </div>
